@@ -10,13 +10,13 @@
 
 
     <select id="colorSelect"> 
-        <option value="">select a color to remove</option>
-        <option>Red</option> 
+        
         <option>Green</option> 
         <option>White</option> 
         <option>Black</option> 
     </select> 
     <input type="button" value="Select and Remove"> 
+	
 </form>
     
 
@@ -29,12 +29,12 @@
         
         inputBtn.addEventListener("click",removeColor);
         function removeColor(){
-            select.remove(selectedColor);
+            select.remove(select.selectedIndex);
         }
 
 
-       // console.log(selectedColor);
-       //select.removeChild(selectedColor);
+      // console.log(selectedColor);
+   //select.removeChild(selectedColor);
        // console.log(select);
     });
 
