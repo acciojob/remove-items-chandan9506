@@ -10,7 +10,7 @@
 
 
     <select id="colorSelect"> 
-        
+        <option>Red</option> 
         <option>Green</option> 
         <option>White</option> 
         <option>Black</option> 
@@ -25,7 +25,7 @@
     let inputBtn = document.querySelector("input");
     
     select.addEventListener("change", function selectAndRemove(event_details){
-        let selectedColor = select.options[select.selectedIndex];
+        //let selectedColor = select.options[select.selectedIndex];
         
         inputBtn.addEventListener("click",removeColor);
         function removeColor(){
